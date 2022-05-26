@@ -50,7 +50,15 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 #### Output
 ![image](https://user-images.githubusercontent.com/98360572/170592016-33ee6c36-0557-48bf-8897-1f39f12388a1.png)
 
+## Linear Regression to Predict MPG
 
+* Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
+
+
+* Is the slope of the linear model considered to be zero? Why or why not?
+
+
+* Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
 
 
