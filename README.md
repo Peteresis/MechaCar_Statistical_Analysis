@@ -97,8 +97,6 @@ total_summary <-  suspension_coil %>% summarize(Mean=mean(PSI),Median=median(PSI
 #### Output
 ![image](https://user-images.githubusercontent.com/98360572/170603615-f4863252-b09c-4c44-9745-749792e96139.png)
 
-![image](https://user-images.githubusercontent.com/98360572/170603711-56b623b9-fca7-4503-bdca-75f54d3daa2e.png)
-
 ### 2.3 Write an RScript that creates a `lot_summary` dataframe using the `group_by()` and the `summarize()` functions to group each manufacturing lot by the mean, median, variance, and standard deviation of the suspension coil’s PSI column
 
 #### Code
@@ -111,11 +109,13 @@ lot_summary <- suspension_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mea
 #### Output
 ![image](https://user-images.githubusercontent.com/98360572/170603948-4b712b62-8b83-43a7-939d-27054d176d95.png)
 
+## Summary Statistics on Suspension Coils
+
+* The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
+
+
+![image](https://user-images.githubusercontent.com/98360572/170603711-56b623b9-fca7-4503-bdca-75f54d3daa2e.png)
+
+
 ![image](https://user-images.githubusercontent.com/98360572/170603987-03230624-cab3-4f06-bddb-538def5977ca.png)
-
-
-
-
-
-
 
