@@ -119,3 +119,76 @@ lot_summary <- suspension_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mea
 
 ![image](https://user-images.githubusercontent.com/98360572/170603987-03230624-cab3-4f06-bddb-538def5977ca.png)
 
+
+
+## :three: Deliverable 3
+
+### 3.1 write an RScript using the `t.test()` function to determine if the PSI across all manufacturing lots is statistically different from the population mean of 1,500 pounds per square inch.
+
+#### Code
+```
+# 3.1 t-test across all manufacturing lots against the population mean = 1500 PSI
+t.test(suspension_coil$PSI, mu=1500)
+```
+#### Output
+![image](https://user-images.githubusercontent.com/98360572/170604850-edbbcb04-34fa-41d4-b327-34d29fe43336.png)
+
+### 3.2 Write three more RScripts using the `t.test()` function and its `subset()` argument to determine if the PSI for each manufacturing lot is statistically different from the population mean of 1,500 pounds per square inch.
+
+#### Code
+```
+# 3.1.1 t-test lot1 against population mean = 1500 PSI
+lot1 <- suspension_coil %>% subset(Manufacturing_Lot=="Lot1")
+t.test(lot1$PSI, mu=1500)
+
+# 3.1.2 t-test lot2 against population mean = 1500 PSI
+lot2 <- suspension_coil %>% subset(Manufacturing_Lot=="Lot2")
+t.test(lot2$PSI, mu=1500)
+
+# 3.1.3 t-test lot3 against population mean = 1500 PSI
+lot3 <- suspension_coil %>% subset(Manufacturing_Lot=="Lot3")
+t.test(lot3$PSI, mu=1500)
+```
+
+#### Output 3.1.1
+![image](https://user-images.githubusercontent.com/98360572/170605237-94f442b3-ca78-471e-b5f0-bf65bef9d968.png)
+
+#### Output 3.1.2
+![image](https://user-images.githubusercontent.com/98360572/170605319-2b8d9133-1246-4145-90ec-5be27ad4fc0c.png)
+
+#### Output 3.1.3
+![image](https://user-images.githubusercontent.com/98360572/170605396-9a794fb7-e5c1-43ee-aefa-e6cc18df85e1.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
