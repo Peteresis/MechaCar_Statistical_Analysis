@@ -202,11 +202,40 @@ It has been determined through data analysis that the two suspension coil lots w
 Using a 93.972 percent confidence interval, we may conclude that the p-value for all lots is less than or equal to 0.06028, which is not statistically significant. There is insufficient evidence to reject the null hypothesis based on this prediction. A statistically equivalent relationship can be found between the dataset's mean and the population's mean. It also appears that the suspension coils dataset is statistically representative of the population mean, according to the results of the investigation.
 
 
+RESPUESTA ALTERNATIVA
+
+The PSI values in Lot 1 and Lot 3 are not significantly different from the population mean. For lot 2, however, the p-value stands at.347, indicating that the suspension coil deviates from the population mean. The following are all of the t-tests:
 
 
+## :four: Deliverable 4
+
+### 4.1 Study Design: MechaCar vs Competition
+
+When shopping for a car, one of the aspects that consumers look into is the amount of horsepower that the vehicle offers. In my opinion, the consumer decision-making process is affected by three factors: horsepower, miles per gallon, and the size of the engine. We may utilize our experiments to determine whether or not our MechaCar is significantly different from the other vehicles in the competition. It is possible to form a null hypothesis, which would state that it is not distinguishable from the other companies, and our alternative would be the opposite of that. In order to accomplish this, we will have to apply our t-test once we have gathered data from a variety of various kinds of competing automobiles. Our t-test will include making a comparison between the populations of all of the different sorts of rival automobiles.
 
 
+RESPUESTA ALTERNATIVA
 
+
+The goal is to make the MechaCar car more efficient than current vehicles on the market. To achieve this goal, I believe that attention should be focused on increasing the MechaCar's fuel efficiency. In addition to the existing six variables examined in this study, further data must be collected for all MechaCar production designs. Weather conditions, such as wind speed and direction, rain, heat, and so on, might be added as well. Short and long travels, as well as fuel economy over time, must be taken into consideration when determining fuel efficiency. Comparisons can only be made with general market competition data.
+
+Which metric(s) are you planning to put to the test, if any?
+The following metrics will be met:
+
+Numerical data is required for every information
+As many data points as feasible will be collected.
+Randomly chosen data samples are needed.
+The data's standard deviation must be the same as
+What do you mean by "null hypothesis"?
+HO: In terms of mpg data, MechaCar's mpg dataset is identical to the competition's mpg dataset.
+
+MechaCar's true mean mpg is higher than the competitor's true mean mpg.
+
+What kind of statistical test would you use to test the hypothesis?? How come?
+In order to compare our dataset to our competitors', I recommend using the t-test to do so. For this present analysis, the t-test was used and produced the predictions needed to move further.
+
+A statistical test requires a certain amount of data.
+There would be a p-value of 0.05. A p-value of less than 0.05 would indicate that the null hypothesis could be rejected and that the Ha is true based on the data. The MechaCar's mpg is predicted to continually outperform the mpg of its competitors if the Ha is accurate. Better fuel efficiency may not occur 100% of the time, but at the very least 95% of the time, there is opportunity for improvement.
 
 
 
