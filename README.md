@@ -62,45 +62,23 @@ summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_cleara
 
 ## Linear Regression to Predict MPG
 
+With multiple linear regression, we find which variables (vehicle weight, spoiler angle, ground clearance, AWD, and vehicle length) predict MechaCar prototype mpg. We're asking if MechaCar prototype factors affect mpg.
+
+Hypothesis established using multiple linear regression model:
+
+`H0`: The linear model's slope is zero, or `m = 0`. Our linear model is a flat line with 0 slope.
+
+`Ha`: The slope of the linear model is not zero, or `m ≠ 0`. Our linear model is not really a flat line with a slope larger than 0.
+
 * Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 
-In the dataset, it is plausible to anticipate that the following variables and coefficients contributed non-randomly to the mpg value:
+To discover whether variables affect `mpg` non-randomly, we must examine their `p-values`. If the `p-value is < 0.05`, random variance to the linear model is unlikely, implying those variables affect `mpg`. According to our results shown in the figure below, ground clearance (p-value = 5.21 x 10-8), vehicle length (p-value = 2.60 x 10-12), and intercept (p-value = 5.08 x 10-8) provided non-random mpg variance. When an intercept is statistically significant, other variables and factors that affect mpg are missing from the model. These variables may be in our dataset or need to be collected or observed.
 
-`vehicle weight (0.0776)`
-`spoiler angle (0.3069)`
-`AWD (0.1852)`
-
-RESPUESTA ALTERNATIVA
-
-Variation in weight, spoiler angle, and AWD was not random. Ground clearance and vehicle length were the two factors with the largest random variance.
-
-
-
-
-
-* Is the slope of the linear model considered to be zero? Why or why not?
-
-P-values (probability values) for the above variables are smaller than our significance level of 0.05, which means they are statistically insignificant. As an example, the significance threshold for vehicle weight is as follows: In other words, 92.2 percent. The intended level of significance is 0.05 - 1 = 0.95 (or 95%). Using data from the linear model, all three variables/coefficients are expected to be outside the 95 percent minimal significance level. Additionally, this model has a statistically significant intersept value (5.08e-08), which suggests additional variables or coefficients that have not been accounted for could contribute to the variation in mpg (nor in the provided dataset). It's possible that more data has to be gathered or observed in order to boost the predictive potential of the analysis. Because the p-value is less than 0.05, the linear model's slope is not assumed to be zero.
-
-RESPUESTA ALTERNATIVA
-
-Our p-value is less than 0.05, so our slope is not zero.
-
-
-
-
+![image](https://user-images.githubusercontent.com/98360572/170800519-13d30677-2919-4f69-8b23-c95f1917b146.png)
 
 * Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
-According to the summary output, the r-squared value is 0.71, implying that this linear model will correctly predict approximately 71% of all mpg predictions. Furthermore, the linear model's p-value is 5.35e-11 (last line of the above image in the F-statistic results), which is lower (94.65%) than the desired significance level of 0.05. (95 percent ).
-
-
-RESPUESTA ALTERNATIVA
-
-Our R-squared value is 71 percent, which suggests that around 71 percent of the time the model will properly estimate mpg numbers. The mpg variability of the MechaCar prototypes may be due to other factors that were not included in the data set.
-
-
-
+To assess if this linear model accurately predicts MechaCar mpg, we must examine its r-squared and p-value. According to our data in the figure above, r-squared is 0.7149, indicating a strong positive linear association. This linear model accurately predicts MechaCar prototype mpg.
 
 ## :two: Deliverable 2
 
@@ -145,7 +123,6 @@ lot_summary <- suspension_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mea
 * The design specifications for the MechaCar suspension coils dictate that the variance of the suspension coils must not exceed 100 pounds per square inch. Does the current manufacturing data meet this design specification for all manufacturing lots in total and each lot individually? Why or why not?
 
 ![image](https://user-images.githubusercontent.com/98360572/170603711-56b623b9-fca7-4503-bdca-75f54d3daa2e.png)
-
 
 ![image](https://user-images.githubusercontent.com/98360572/170603987-03230624-cab3-4f06-bddb-538def5977ca.png)
 
