@@ -193,53 +193,33 @@ In `3.1.3` the `p-value` is lower than `0.05` and so **this lot's mean is differ
 
 ### 4.1 Study Design: MechaCar vs Competition
 
-When shopping for a car, one of the aspects that consumers look into is the amount of horsepower that the vehicle offers. In my opinion, the consumer decision-making process is affected by three factors: horsepower, miles per gallon, and the size of the engine. We may utilize our experiments to determine whether or not our MechaCar is significantly different from the other vehicles in the competition. It is possible to form a null hypothesis, which would state that it is not distinguishable from the other companies, and our alternative would be the opposite of that. In order to accomplish this, we will have to apply our t-test once we have gathered data from a variety of various kinds of competing automobiles. Our t-test will include making a comparison between the populations of all of the different sorts of rival automobiles.
+#### What metric or metrics are you going to test?
+
+Customers are becoming increasingly concerned about pollution and automobile emissions as electric vehicles and environmental consciousness grow in popularity. MechaCar can be a viable alternative for customers who cannot or will not invest in an electric vehicle. MechaCar should be compared to the competitors using a single dependent variable, for example `exhaust system emissions`, compared to a single independent variable, `transmission efficiency`.
+
+#### What is the null hypothesis or alternative hypothesis?
+
+My hypotheses for comparing MechaCar to the competition are as follows:
+
+`H0`: The means of exhaust system emissiomns of all groups are the same.
+
+`Ha`: There is at least one method of exhaust system emissions that is distinct from the rest of the groups.
+
+#### What statistical test would you use to test the hypothesis? And why?
+
+To compare the means of one dependent variable across many independent variables, we will want to do an analysis of variance (ANOVA). Emissions from various cars' exhaust systems, based on transmission efficiency in our example. At least one method for exhaust system emissions must be different from the others for the null hypothesis to be rejected.
+
+#### What data is needed to run the statistical test?
+
+* Exhaust system emissions data
+* Transmission efficiency data
 
 
-RESPUESTA ALTERNATIVA
+---
+## :five: References
 
+**Module 15: Using Statistics and R to Boost Your Data Science Repertoire**, https://courses.bootcampspot.com/courses/1145/pages/15-dot-0-1-using-statistics-and-r-to-boost-your-data-science-repertoire, :copyright: 2020-2021 Trilogy Education Services, Web 27 May 2022.
 
-The goal is to make the MechaCar car more efficient than current vehicles on the market. To achieve this goal, I believe that attention should be focused on increasing the MechaCar's fuel efficiency. In addition to the existing six variables examined in this study, further data must be collected for all MechaCar production designs. Weather conditions, such as wind speed and direction, rain, heat, and so on, might be added as well. Short and long travels, as well as fuel economy over time, must be taken into consideration when determining fuel efficiency. Comparisons can only be made with general market competition data.
+**R Studio Cloud**, https://rstudio.cloud/
 
-Which metric(s) are you planning to put to the test, if any?
-The following metrics will be met:
-
-Numerical data is required for every information
-As many data points as feasible will be collected.
-Randomly chosen data samples are needed.
-The data's standard deviation must be the same as
-What do you mean by "null hypothesis"?
-HO: In terms of mpg data, MechaCar's mpg dataset is identical to the competition's mpg dataset.
-
-MechaCar's true mean mpg is higher than the competitor's true mean mpg.
-
-What kind of statistical test would you use to test the hypothesis?? How come?
-In order to compare our dataset to our competitors', I recommend using the t-test to do so. For this present analysis, the t-test was used and produced the predictions needed to move further.
-
-A statistical test requires a certain amount of data.
-There would be a p-value of 0.05. A p-value of less than 0.05 would indicate that the null hypothesis could be rejected and that the Ha is true based on the data. The MechaCar's mpg is predicted to continually outperform the mpg of its competitors if the Ha is accurate. Better fuel efficiency may not occur 100% of the time, but at the very least 95% of the time, there is opportunity for improvement.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+**Complete Code Used in this Challenge**, 
