@@ -222,4 +222,4 @@ To compare the means of one dependent variable across many independent variables
 
 **R Studio Cloud**, https://rstudio.cloud/
 
-**Complete Code Used in this Challenge**, 
+**Complete Code Used in this Challenge**, https://github.com/Peteresis/MechaCar_Statistical_Analysis/blob/main/MechaCarChallenge.R
