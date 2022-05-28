@@ -72,13 +72,13 @@ Hypothesis established using multiple linear regression model:
 
 * Which variables/coefficients provided a non-random amount of variance to the mpg values in the dataset?
 
-To discover whether variables affect `mpg` non-randomly, we must examine their `p-values`. If the `p-value is < 0.05`, random variance to the linear model is unlikely, implying those variables affect `mpg`. According to our results shown in the figure below, ground clearance (p-value = 5.21 x 10-8), vehicle length (p-value = 2.60 x 10-12), and intercept (p-value = 5.08 x 10-8) provided non-random mpg variance. When an intercept is statistically significant, other variables and factors that affect mpg are missing from the model. These variables may be in our dataset or need to be collected or observed.
+To discover whether variables affect `mpg` non-randomly, we must examine their `p-values`. If the `p-value is < 0.05`, random variance to the linear model is unlikely, implying those variables affect `mpg`. According to our results shown in the figure below, ground clearance `p-value = 5.21 x 10-8`, vehicle length `p-value = 2.60 x 10-12`, and intercept `p-value = 5.08 x 10-8` provided non-random mpg variance. When an intercept is statistically significant, other variables and factors that affect mpg are missing from the model. These variables may be in our dataset or need to be collected or observed.
 
 ![image](https://user-images.githubusercontent.com/98360572/170800519-13d30677-2919-4f69-8b23-c95f1917b146.png)
 
 * Does this linear model predict mpg of MechaCar prototypes effectively? Why or why not?
 
-To assess if this linear model accurately predicts MechaCar mpg, we must examine its r-squared and p-value. According to our data in the figure above, r-squared is 0.7149, indicating a strong positive linear association. This linear model accurately predicts MechaCar prototype mpg.
+To assess if this linear model accurately predicts MechaCar `mpg`, we must examine its `r-squared` and `p-value`. According to our data in the figure above, `r-squared` is `0.7149`, indicating a strong positive linear association. This linear model accurately predicts MechaCar prototype `mpg`.
 
 ## :two: Deliverable 2
 
@@ -126,8 +126,6 @@ lot_summary <- suspension_coil %>% group_by(Manufacturing_Lot) %>% summarize(Mea
 
 ![image](https://user-images.githubusercontent.com/98360572/170603987-03230624-cab3-4f06-bddb-538def5977ca.png)
 
-The MechaCar suspension coils must not have a deviation of more than 100 pounds per square inch, according to the design specifications. Existing production information meets this design standard for each and every manufacturing lot, individually and collectively? To what end?
-
 There are no significant differences between the mean and median of Lot 1 and Lot 2 based on the design parameters. There is a lot of variation in Lot 3 compared to the manufacturer's specifications.
 
 ## :three: Deliverable 3
@@ -171,18 +169,21 @@ t.test(lot3$PSI, mu=1500)
 
 It has been determined through data analysis that the two suspension coil lots with variation and standard deviation less than 100 pounds per square inch will meet the design specifications. Lot 3's variance and standard deviation, on the other hand, are larger than 100 pounds per square inch, so it fails to meet the design criteria.
 
-
-
-
-
 ## T-Tests on Suspension Coils
-Using a 93.972 percent confidence interval, we may conclude that the p-value for all lots is less than or equal to 0.06028, which is not statistically significant. There is insufficient evidence to reject the null hypothesis based on this prediction. A statistically equivalent relationship can be found between the dataset's mean and the population's mean. It also appears that the suspension coils dataset is statistically representative of the population mean, according to the results of the investigation.
 
+It is necessary to conduct a `one-sample t-test` to evaluate whether there is a statistically significant difference between the means of a sample dataset and a population dataset with a given mean of `1,500 PSI`. We establish a `hypothesis with the t-test`.
 
-RESPUESTA ALTERNATIVA
+`H0`: There's no statistical difference between the suspension coil data set mean and `1,500 PSI`.
 
-The PSI values in Lot 1 and Lot 3 are not significantly different from the population mean. For lot 2, however, the p-value stands at.347, indicating that the suspension coil deviates from the population mean. The following are all of the t-tests:
+`Ha`: The suspension coil data set mean is different from its `1,500 PSI` population mean.
 
+To reject or fail to reject our null hypothesis, we examine at the `p-value`, which establishes if there is a statistical difference between the observed sample mean and its presumed population mean. The `p-values` for all manufacturing lots are: 
+| Syntax      | Description |
+| ----------- | ----------- |
+| Header      | Title       |
+| Paragraph   | Text        |
+
+, `0.9048`, `0.3451`, and `0.637`. In all situations, `p-value` is over `0.05`. **Insufficient evidence means that the two means are not statistically different**.
 
 ## :four: Deliverable 4
 
