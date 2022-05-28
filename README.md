@@ -185,8 +185,9 @@ To reject or fail to reject our null hypothesis, we examine at the `p-value`, wh
 | 3.1.2   | 0.6072 |
 | 3.1.3   | 0.04168 |
 
+In `3.1`, `3.1.1` and `3.1.2` the `p-value` is over `0.05`, which means that **there is insufficient evidence that the three means are not statistically different**.
 
-, `0.9048`, `0.3451`, and `0.637`. In all situations, `p-value` is over `0.05`. **Insufficient evidence means that the two means are not statistically different**.
+In `3.1.3` the `p-value` is lower than `0.05` and so **this lot's mean is different from its `1,500 PSI` population mean**. 
 
 ## :four: Deliverable 4
 
