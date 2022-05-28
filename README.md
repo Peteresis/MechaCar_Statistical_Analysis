@@ -178,10 +178,13 @@ It is necessary to conduct a `one-sample t-test` to evaluate whether there is a 
 `Ha`: The suspension coil data set mean is different from its `1,500 PSI` population mean.
 
 To reject or fail to reject our null hypothesis, we examine at the `p-value`, which establishes if there is a statistical difference between the observed sample mean and its presumed population mean. The `p-values` for all manufacturing lots are: 
-| Syntax      | Description |
+| Test Number | p-value |
 | ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+| 3.1      | 0.06028 |
+| 3.1.1      | 1 |
+| 3.1.2   | 0.6072 |
+| 3.1.3   | 0.04168 |
+
 
 , `0.9048`, `0.3451`, and `0.637`. In all situations, `p-value` is over `0.05`. **Insufficient evidence means that the two means are not statistically different**.
 
